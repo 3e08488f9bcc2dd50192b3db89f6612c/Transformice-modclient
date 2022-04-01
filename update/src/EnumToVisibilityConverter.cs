@@ -7,6 +7,7 @@ namespace Update
 {
 	public sealed class EnumToVisibilityConverter : IValueConverter
 	{
+		/// Member Functions
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
 			if(value == null || parameter == null || !(value is Enum)) return Visibility.Collapsed;
