@@ -1,5 +1,5 @@
 <?php
-$filename = "/download/update.zip";
+$filename = "update.zip";
 
 header('Content-Description: File Transfer');
 header('Content-Type: application/octet-stream');
