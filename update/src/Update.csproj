@@ -55,9 +55,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
     <Compile Include="BindableBase.cs" />
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="EnumToVisibilityConverter.cs" />

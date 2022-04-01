@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace Update
+﻿namespace Update
 {
-	public enum UpdateState
-	{
-		CheckingForTransformiceExe,
-		Downloading, // Download the executable from server
-		Updating // Extract and replace it.
-	}
+    public enum UpdateState
+    {
+        CheckingForTransformiceExe,
+        Downloading, // Download the executable from server
+        Updating // Extract and replace it.
+    }
 }
