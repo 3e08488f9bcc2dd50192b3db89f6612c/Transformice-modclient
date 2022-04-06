@@ -48,8 +48,14 @@ namespace tfmClientHook
 			}
 			proxyServer.SendToServer(targetServer, message);
 		}
-		public void SetEncryptionKey(sbyte[] encryptionKey) => ServerInfo.EncryptionKey = encryptionKey;
-		public void SetEncryptionVector(int[] encryptionVector) => ServerInfo.EncryptionVector = encryptionVector;
+		public void SetEncryptionKey(sbyte[] encryptionKey)
+		{
+			ServerInfo.EncryptionKey = encryptionKey;
+		}
+		public void SetEncryptionVector(int[] encryptionVector)
+		{
+			ServerInfo.EncryptionVector = encryptionVector;
+		}
 		private int ConnectHooked(IntPtr socketHandle, ref NativeSocketMethod.sockaddr name, ref int namelen)
 		{
 			string text = string.Join<byte>(".", name.sin_addr.sin_addr);

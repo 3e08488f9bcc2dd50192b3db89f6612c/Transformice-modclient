@@ -86,7 +86,10 @@ namespace tfmClientHook
 			if (connectionClosed == null) return;
 			connectionClosed(this, new EventArgs());
 		}
-		public void SendMessageToClient(S_Message message) => this.SendToClient(message.GetBuffer());
+		public void SendMessageToClient(S_Message message)
+		{
+			this.SendToClient(message.GetBuffer());
+		}
 		public void SendMessageToServer(C_Message message)
 		{
 			ByteBuffer buffer = message.GetBuffer();

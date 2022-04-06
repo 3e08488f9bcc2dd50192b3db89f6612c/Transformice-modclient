@@ -12,7 +12,10 @@ namespace tfmClientHook
 		private IPAddress MainServerIP { get; set; }
 		private ProxyConnection MainServer { get; set; }
 		private List<TcpListenerEx> TcpListeners { get; set; }
-		public ProxyServer(IMessageInterceptor messageInterceptor) => this.MessageInterceptor = messageInterceptor;
+		public ProxyServer(IMessageInterceptor messageInterceptor)
+		{
+			this.MessageInterceptor = messageInterceptor;
+		}
 		public void Start(IPAddress mainServerIP)
 		{
 			this.MainServerIP = mainServerIP;
